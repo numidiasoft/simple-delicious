@@ -24,7 +24,7 @@ module Simple
             end
           end
         end
-        Simple::Delicious::Builder.send(:remove_const, "Tag") rescue nil
+        Simple::Delicious::Builder.send(:remove_const, class_name) rescue nil
         Simple::Delicious::Builder.const_set class_name, c
       end #end of create_class
 
