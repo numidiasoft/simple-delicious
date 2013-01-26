@@ -15,6 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Simple::Delicious::VERSION
   gem.add_dependency  'httparty'
+  gem.add_dependency  'rake'
   gem.add_development_dependency  'fakeweb'
   gem.add_development_dependency  'log4r'
   gem.add_development_dependency 'rspec', '~> 2.5'

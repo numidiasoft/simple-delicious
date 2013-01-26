@@ -3,18 +3,20 @@ PATH
   specs:
     simple-delicious (0.0.1)
       httparty
+      rake
 
 GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.1.3)
     fakeweb (1.3.0)
-    httparty (0.10.0)
+    httparty (0.10.1)
       multi_json (~> 1.0)
-      multi_xml
+      multi_xml (>= 0.5.2)
     log4r (1.1.10)
     multi_json (1.5.0)
     multi_xml (0.5.2)
+    rake (10.0.3)
     rspec (2.12.0)
       rspec-core (~> 2.12.0)
       rspec-expectations (~> 2.12.0)
