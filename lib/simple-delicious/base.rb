@@ -18,7 +18,6 @@ module Simple
       def fetch resource, options = {}
         resource = check_resource!(resource)
         path = "#{format(options)}/#{resource.to_s}/#{action(resource, options)}"
-        puts path
         Response.new(self.class.get(path, {:query => options}.merge(:basic_auth => @auth)), resource.to_s)
       end #end of fetch
 
