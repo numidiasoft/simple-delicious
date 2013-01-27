@@ -19,7 +19,7 @@ Or install it yourself as:
 ## Usage
 
 1. Get all Tags:
-        
+
     base = Simple::Delicious:Base.new("login", "password")
     base.tags
 
