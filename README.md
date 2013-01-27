@@ -41,8 +41,10 @@ base.tags :action => "all" (Possible actions are: all, rename and delete )
 
 To Rename a specific Tag:
 
-    base = Simple::Delicious:Base.new("login", "password")
-    base.tags :action => "rename", :old => "oldname", :new => "newname"
+```ruby
+base = Simple::Delicious:Base.new("login", "password")
+base.tags :action => "rename", :old => "oldname", :new => "newname"
+```
 
 3. Delete a specific Tag:
 
