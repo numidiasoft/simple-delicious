@@ -20,6 +20,8 @@ Or install it yourself as:
 
 1. Get all Tags:
 
+To get all tags:
+
     base = Simple::Delicious:Base.new("login", "password")
     base.tags
 
