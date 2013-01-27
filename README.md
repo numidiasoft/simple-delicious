@@ -18,21 +18,18 @@ Or install it yourself as:
 
 ## Usage
 
-  1. Get all Tags:
+1. Get all Tags:
         
     base = Simple::Delicious:Base.new("login", "password")
     base.tags
 
-  2. Rename Tag:
+2. Rename Tag:
 
     base = Simple::Delicious:Base.new("login", "password")
     base.tags :action => "rename", :old => "oldname", :new => "newname"
 
-  3. Delete a specific Tag:
+3. Delete a specific Tag:
 
-     
-
-Usage: TODO
 
 ## Contributing
 
