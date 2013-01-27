@@ -34,7 +34,7 @@ To get all Tags of a specific account:
 
 ```ruby
 base = Simple::Delicious::Base.new("login", "password")
-base.tags :action => "all" (Possible actions are: all, rename and delete )
+base.tags :action => "get" (Possible actions are: get, rename and delete )
 ```
     
 2. Rename Tag:
@@ -52,6 +52,24 @@ Get one tag : eg: (return the git tag)
 response.element("tag", "git")
 ```
 3. Delete a specific Tag:
+
+  
+```ruby
+base = Simple::Delicious::Base.new("login", "password")
+response = base.tags :action => "delete", :tag => "git"
+
+```
+
+Bundles:
+------
+
+1. Get all bundles:
+
+```ruby
+base = Simple::Delicious::Base.new("login", "password")
+response = base.bundles
+
+```
 
 
 ## Contributing

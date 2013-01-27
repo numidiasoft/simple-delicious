@@ -6,12 +6,10 @@ module Simple
          @class_name = class_name.is_a?(String) ? class_name.capitalize : raise("First  parameter should be a String") 
       end #end of initialize class_name, options
       
-
       def build
         klass = create_class(@class_name, @options)
         klass.new
       end #end of build
-
 
       private
       def create_class(class_name, options)
@@ -27,7 +25,6 @@ module Simple
         Simple::Delicious::Builder.send(:remove_const, class_name) rescue nil
         Simple::Delicious::Builder.const_set class_name, c
       end #end of create_class
-
     end
   end
 end

@@ -17,7 +17,7 @@ module Simple
 
       def fetch resource, options = {}
         resource = check_resource!(resource)
-        path = "#{format(options)}/#{resource.to_s}/#{action(resource, options)}"
+        path = "#{format(resource.to_s, options)}/#{resource.to_s}/#{action(resource, options)}"
         Response.new(self.class.get(path, {:query => options}.merge(:basic_auth => @auth)), resource.to_s)
       end #end of fetch
 
@@ -32,9 +32,10 @@ module Simple
 
 
       private
-      def format options
-        format = options.delete(:format)
-        format == "json" ? "/"+format : "" 
+      def format resource, options
+        format = options.delete(:format) and format == "json" ? "/"+format : ""
+        format = "/json" if resource.split("/").last == "bundles" 
+        return format
       end #end of path
 
       def action resource, options
