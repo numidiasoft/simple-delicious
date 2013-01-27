@@ -1,4 +1,4 @@
-require "simple-delcious/configuration"
+require "simple-delicious/configuration"
 require "simple-delicious/base"
 require "spec_helper"
 
