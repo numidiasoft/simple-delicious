@@ -43,9 +43,14 @@ To Rename a specific Tag:
 
 ```ruby
 base = Simple::Delicious::Base.new("login", "password")
-base.tags :action => "rename", :old => "oldname", :new => "newname"
+response = base.tags :action => "rename", :old => "oldname", :new => "newname"
 ```
 
+Get one tag : eg: (return the git tag)
+
+```ruby
+response.element("tag", "git")
+```
 3. Delete a specific Tag:
 
 
