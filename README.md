@@ -27,8 +27,8 @@ Parameters are uniform across the functions. All calls can accept:
 
 To get all Tags of a secific account:
 
-    base = Simple::Delicious:Base.new("login", "password")
-    base.tags :action => "all" (Possible actions are: all, rename and delete )
+    `base = Simple::Delicious:Base.new("login", "password")
+    base.tags :action => "all" (Possible actions are: all, rename and delete )`
 
 2. Rename Tag:
 
