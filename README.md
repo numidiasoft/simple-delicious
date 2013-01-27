@@ -32,9 +32,10 @@ Tags:
 
 To get all Tags of a specific account:
 
-    base = Simple::Delicious:Base.new("login", "password")
-    base.tags :action => "all" (Possible actions are: all, rename and delete )
-
+```ruby
+base = Simple::Delicious:Base.new("login", "password")
+base.tags :action => "all" (Possible actions are: all, rename and delete )
+```
     
 2. Rename Tag:
 
