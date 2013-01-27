@@ -1,3 +1,4 @@
+require "simple-delicious/builder"
 require "spec_helper"
 describe "Builder" do
   before do

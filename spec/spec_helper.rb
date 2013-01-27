@@ -18,7 +18,6 @@ RSpec.configure do |config|
   config.order = 'random'
 
   config.prepend_before do
-    require File.expand_path("lib/simple-delicious.rb")
     Simple::Delicious::Configuration.reset
   end
 end

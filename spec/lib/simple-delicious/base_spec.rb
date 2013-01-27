@@ -1,3 +1,5 @@
+require "simple-delcious/configuration"
+require "simple-delicious/base"
 require "spec_helper"
 
 describe "Base" do

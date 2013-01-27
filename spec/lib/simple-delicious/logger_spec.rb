@@ -1,3 +1,4 @@
+require "simple-delicious/logger"
 require "spec_helper"
 
 describe "Log" do

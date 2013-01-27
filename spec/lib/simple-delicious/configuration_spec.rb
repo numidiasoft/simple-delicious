@@ -1,3 +1,4 @@
+require "simple-delicious/configuration"
 require "spec_helper"
 
 describe "Configuration" do
