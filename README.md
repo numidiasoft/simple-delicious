@@ -33,7 +33,7 @@ Tags:
 To get all Tags of a specific account:
 
 ```ruby
-base = Simple::Delicious:Base.new("login", "password")
+base = Simple::Delicious::Base.new("login", "password")
 base.tags :action => "all" (Possible actions are: all, rename and delete )
 ```
     
@@ -42,7 +42,7 @@ base.tags :action => "all" (Possible actions are: all, rename and delete )
 To Rename a specific Tag:
 
 ```ruby
-base = Simple::Delicious:Base.new("login", "password")
+base = Simple::Delicious::Base.new("login", "password")
 base.tags :action => "rename", :old => "oldname", :new => "newname"
 ```
 
