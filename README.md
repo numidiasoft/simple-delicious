@@ -23,12 +23,13 @@ Parameters are uniform across the functions. All calls can accept:
     :action is the http action to call, eg:  "/tags/update" would be :action => "update"   
     :params is a map of parameters to pass, eg, tag=git would be {tag:"git"}
 
+### Examples
 1. Get all Tags:
 
-To get all Tags of a secific account:
+To get all Tags of a specific account:
 
-    `base = Simple::Delicious:Base.new("login", "password")
-    base.tags :action => "all" (Possible actions are: all, rename and delete )`
+    base = Simple::Delicious:Base.new("login", "password")
+    base.tags :action => "all" (Possible actions are: all, rename and delete )
 
 2. Rename Tag:
 
