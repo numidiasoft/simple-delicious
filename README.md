@@ -19,11 +19,15 @@ Or install it yourself as:
 ## Usage
 
 1. Get all Tags:
-        
+
+To get all Tags of a secific account:
+
     base = Simple::Delicious:Base.new("login", "password")
     base.tags
 
 2. Rename Tag:
+
+To Rename a specific Tag:
 
     base = Simple::Delicious:Base.new("login", "password")
     base.tags :action => "rename", :old => "oldname", :new => "newname"
