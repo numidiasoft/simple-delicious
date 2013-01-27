@@ -24,6 +24,9 @@ Parameters are uniform across the functions. All calls can accept:
     :params is a map of parameters to pass, eg, tag=git would be {tag:"git"}
 
 ### Examples
+
+####Tags:
+
 1. Get all Tags:
 
 To get all Tags of a specific account:
