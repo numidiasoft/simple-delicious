@@ -17,8 +17,7 @@ Or install it yourself as:
     $ gem install simple-delicious
 
 ## Usage
-
-  ## Tags :
+## Tags :
 
 1. Get all Tags :
       
