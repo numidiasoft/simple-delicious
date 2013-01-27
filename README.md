@@ -23,9 +23,10 @@ Parameters are uniform across the functions. All calls can accept:
     :action is the http operation to call, eg:  "/tags/update" would be :action => "update"   
     :params is a map of parameters to pass, eg, tag=git would be {tag:"git"}
 
-### Examples
+### Examples :
 
-####Tags:
+Tags:
+------
 
 1. Get all Tags:
 
