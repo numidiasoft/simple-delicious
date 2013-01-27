@@ -18,12 +18,17 @@ Or install it yourself as:
 
 ## Usage
 
+Parameters are uniform across the functions. All calls can accept:
+
+    :action is the http action to call, eg: to call "/tag/update" would be :action => "update"   
+    :params is a map of parameters to pass, eg, tag=git would be {tag:"git"}
+
 1. Get all Tags:
 
 To get all Tags of a secific account:
 
     base = Simple::Delicious:Base.new("login", "password")
-    base.tags
+    base.tags :action => "all"
 
 2. Rename Tag:
 
